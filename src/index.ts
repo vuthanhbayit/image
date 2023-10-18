@@ -1,3 +1,1 @@
-export function test() {
-  return "works!";
-}
+export { getImage as imagorProvider } from "./providers/imagor";
