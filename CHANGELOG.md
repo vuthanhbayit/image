@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/vuthanhbayit/image/compare/v0.0.1...v0.0.2)
+
+### 🩹 Fixes
+
+- Remove @nuxt/image from dependencies ([962076e](https://github.com/vuthanhbayit/image/commit/962076e))
+
+### ❤️ Contributors
+
+- Vu Thanh Bay <vuthanhbayit@gmail.com>
+
 ## v0.0.1
 
 
