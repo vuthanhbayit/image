@@ -44,6 +44,6 @@ export const operationsGenerator = (modifiers: Partial<ImageModifiers>) => {
 export const getImage: ProviderGetImage = (src, options = {}) => {
   const operations = operationsGenerator(options.modifiers || {});
   return {
-    url: joinURL(options.baseURL, operations, options.imageBaseUrl, src),
+    url: joinURL(options.imageBaseURL, operations, options.mediaBaseURL, src),
   };
 };
