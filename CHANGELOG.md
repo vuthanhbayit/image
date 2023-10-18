@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/vuthanhbayit/image/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Change media base url ([619e08e](https://github.com/vuthanhbayit/image/commit/619e08e))
+
+### ❤️ Contributors
+
+- Vu Thanh Bay <vuthanhbayit@gmail.com>
+
 ## v0.0.2
 
 [compare changes](https://github.com/vuthanhbayit/image/compare/v0.0.1...v0.0.2)
