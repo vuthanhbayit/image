@@ -1,6 +1,10 @@
 import { joinURL } from "ufo";
-import { createMapper } from "@nuxt/image/dist/runtime";
-import { clearUndefined, reduce, size as getSize } from "@vt7/utils";
+import {
+  clearUndefined,
+  reduce,
+  size as getSize,
+  createMapper,
+} from "@vt7/utils";
 import type { ImageModifiers, ProviderGetImage } from "@nuxt/image/dist/types";
 
 export const filterMapper = createMapper({
@@ -27,6 +31,7 @@ export const operationsGenerator = (modifiers: Partial<ImageModifiers>) => {
     ? reduce(
         tail as Record<string, string>,
         (acc, key, value) => {
+          // @ts-ignore
           return acc + ":" + `${filterMapper(key)}(${value})`;
         },
         "filters",
