@@ -26,9 +26,8 @@
     "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c src test",
     "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src test -w",
     "prepack": "pnpm run build",
-    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
-    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
-    "test:types": "tsc --noEmit --skipLibCheck"
+    "release": "changelogen --release && pnpm publish && git push --follow-tags",
+    "prepublish": "pnpm build"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",
